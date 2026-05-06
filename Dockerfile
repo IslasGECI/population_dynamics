@@ -1,4 +1,4 @@
-FROM islasgeci/base:1.0.0
+FROM islasgeci/base:22.04
 COPY . /workdir
 RUN Rscript -e "install.packages(c('comprehenr', 'latex2exp', 'plotly'), repos='http://cran.rstudio.com')"
 
